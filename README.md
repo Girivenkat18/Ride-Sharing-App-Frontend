@@ -80,14 +80,19 @@ Home Screen-
 
 <img width="340" height="719" alt="HomeScreen" src="https://github.com/user-attachments/assets/d001903b-e79d-447e-a51d-7a915a51f056" />
 
+
 AvailableRides Screen-
 
 <img width="340" height="719" alt="AvailableRides" src="https://github.com/user-attachments/assets/41d3565f-2a1d-40e7-96b0-3fa60621901f" />
+
 
 CreateRide Screen-
 
 <img width="340" height="719" alt="CreateRide" src="https://github.com/user-attachments/assets/dff61541-8dda-4913-a381-2b9bd3ae2c4d" />
 
+
 RideHistory Screen-
 
 <img width="340" height="719" alt="RideHistory" src="https://github.com/user-attachments/assets/a4e3e28a-7fd8-492e-b837-a055e169239c" />
+
+
