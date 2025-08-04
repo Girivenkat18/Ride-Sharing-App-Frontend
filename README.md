@@ -1,97 +1,77 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📱 Ride-Sharing App — Frontend
 
-# Getting Started
+Mobile frontend for a ride-sharing platform that lets users post rides, request to join others, and track their ride history in a categorized view. The goal of this project is to simplify shared travel and promote efficient, affordable, and eco-friendly commuting through an intuitive mobile experience.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+Built using React Native, the app provides a clean and responsive UI, connects securely to a Spring Boot backend via JWT-authenticated API calls, and supports a wide range of features including ride creation, joining rides, request management, and ride tracking.
 
-## Step 1: Start Metro
+---
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## 🔧 Tech Stack
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- React Native CLI
+- React Navigation
+- Axios (HTTP requests)
+- AsyncStorage (JWT & session management)
+- Vector Icons (react-native-vector-icons)
+- JavaScript (ES6+)
 
-```sh
-# Using npm
-npm start
+---
 
-# OR using Yarn
-yarn start
+## 📱 Core Features
+
+- User registration and login with JWT integration
+- Post new rides with details like source, destination, date, and fare
+- Request to join available rides
+- View categorized ride history: upcoming, previous, and pending
+- Accept, reject, or cancel ride requests
+- Interactive UI with icons and responsive design
+- Session handling and persistent login using AsyncStorage
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure the following are installed:
+
+- Node.js (v14+)
+- React Native CLI
+- Android Studio / Xcode (for running emulator or device)
+- Backend server (Spring Boot) running at a valid IP
+
+---
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/Girivenkat18/Ride-Sharing-Frontend.git
+cd Ride-Sharing-Frontend
 ```
 
-## Step 2: Build and run your app
+### Step 2: Install Dependencies
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```bash
+npm install
 ```
 
-### iOS
+### Step 3: Set Backend API URL
+Edit your services/api.js file:
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+```js
+const BASE_URL = 'http://<your-local-ip>:8080/api';
+```
+Use your local IP address (e.g., 192.168.x.x) for mobile devices to connect to your local backend.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+### Step 4: Run the App
 
-```sh
-bundle install
+For Android:
+```bash
+npx react-native run-android
 ```
 
-Then, and every time you update your native dependencies, run:
+For IOS:
 
-```sh
-bundle exec pod install
+```bash
+npx react-native run-ios
 ```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
