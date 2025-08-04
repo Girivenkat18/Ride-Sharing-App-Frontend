@@ -1,10 +1,10 @@
-# 📱 Ride-Sharing App — Frontend
+# Ride-Sharing App — Frontend
 
 Mobile application for a ride-sharing platform that enables users to post rides, request to join existing rides, and manage their ride history through an interactive and user-friendly interface. The purpose of the project is to make everyday travel more convenient, affordable, and eco-friendly by simplifying ride coordination. Built using React Native, the app communicates with a Spring Boot backend via secure API calls. It supports user authentication, categorized ride tracking and session handling using local storage. The UI is designed for smooth navigation and an engaging user experience across devices.
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - React Native CLI
 - React Navigation
@@ -15,7 +15,7 @@ Mobile application for a ride-sharing platform that enables users to post rides,
 
 ---
 
-## 📱 Core Features
+## Core Features
 
 - User registration and login with JWT integration
 - Post new rides with details like source, destination, date, and fare
@@ -27,7 +27,7 @@ Mobile application for a ride-sharing platform that enables users to post rides,
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
